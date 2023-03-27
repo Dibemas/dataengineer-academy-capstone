@@ -76,7 +76,7 @@ def retrieve_and_clean_data():
     df.write.format(SNOWFLAKE_SOURCE_NAME).options(**sfOptions).option("dbtable", "nele_weather_data").mode("overwrite").save()
 
 if __name__ == "__main__":
-    # read_data_raw_from_s3()
+    read_data_raw_from_s3()
     retrieve_and_clean_data()
     # print(get_snowflake_credentials())
 

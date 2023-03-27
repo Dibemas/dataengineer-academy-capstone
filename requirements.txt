@@ -1,0 +1,2 @@
+aws-secretsmanager-caching
+pyspark==3.1.2
