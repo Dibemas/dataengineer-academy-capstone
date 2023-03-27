@@ -1,0 +1,4 @@
+aws-secretsmanager-caching
+pyspark==3.1.2
+requests
+boto3
