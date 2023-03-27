@@ -4,13 +4,12 @@ WORKDIR /src
 
 USER 0
 
-COPY ./resources/jars/ /opt/spark/jars/
 COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY ./load_weather_data.py .
+COPY ./airquality-ingest.py .
 
-ENTRYPOINT ["python3","load_weather_data.py"]
+ENTRYPOINT ["python3","airquality-ingest.py"]
 
 
